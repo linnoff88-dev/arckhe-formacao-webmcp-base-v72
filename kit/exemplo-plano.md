@@ -16,7 +16,7 @@ Busca liberada, ação do usuário liberada, treino bloqueado (decisão anotada 
 
 ## Readiness
 Nota: 52 em 19/10/2026 (diagnóstico, não ranking)
-Primeiro: descrição nos resultados e URL canônica (SEO, curso Fundação da inemaSEO). As falhas de ferramentas WebMCP ficam para o curso 2: sem ferramenta registrada, elas são esperadas.
+Primeiro: descrição nos resultados e URL canônica (SEO, curso Fundação da ARCKHÉSEO). As falhas de ferramentas WebMCP ficam para o curso 2: sem ferramenta registrada, elas são esperadas.
 
 ## WebMCP
 Estado lido em 19/10/2026: spec de 16/10/2026 (rascunho de Community Group), origin trial no Chrome 149 e no Edge 150, Mozilla neutra, WebKit contra.

@@ -98,7 +98,7 @@
           "titulo": "Note it with a date",
           "sub": "your plan",
           "texto": [
-            "Everything that depends on a flag, origin trial, or explainer gets the \"experimental on DD/MM/YYYY\" stamp. WebMCP is preparation, not ranking: visibility in AI is a topic for the inemaSEO Program."
+            "Everything that depends on a flag, origin trial, or explainer gets the \"experimental on DD/MM/YYYY\" stamp. WebMCP is preparation, not ranking: visibility in AI is a topic for the ARCKHÉSEO Program."
           ],
           "exemplo": {
             "rot": "A real case of an API that changed",
@@ -262,8 +262,8 @@
           "icone": "chat"
         },
         {
-          "t": "inemaSEO Program: WebMCP as preparation, for the site owner",
-          "href": "https://inematds.github.io/formacao-inemaseo-ias-v72/en/aulas/webmcp-preparacao/",
+          "t": "ARCKHÉSEO Program: WebMCP as preparation, for the site owner",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         }
       ]

@@ -41,7 +41,7 @@
           "icone": "lupa",
           "titulo": "Leer",
           "sub": "descarga el HTML",
-          "detalhe": "Las herramientas de búsqueda y de fetch descargan la página y sacan el texto. Muchas no ejecutan JavaScript: lo que no está en el HTML no existe para ellas. Aparecer en las respuestas de las IAs es tema de la Formación inemaSEO."
+          "detalhe": "Las herramientas de búsqueda y de fetch descargan la página y sacan el texto. Muchas no ejecutan JavaScript: lo que no está en el HTML no existe para ellas. Aparecer en las respuestas de las IAs es tema de la Formación ARCKHÉSEO."
         },
         {
           "icone": "robo",
@@ -95,7 +95,7 @@
           "sub": "WebMCP o MCP",
           "texto": [
             "Si la página registrara una tool para agendar, el agente pasaría nombre, servicio y fecha en JSON y recibiría la respuesta, sin hacer clic en nada.",
-            "En el Chromium del kit la API no existe: la página de ejemplo no tiene token de origin trial. INEMA.CLUB sí lo tiene, y ahí el mismo Chromium lista las tools."
+            "En el Chromium del kit la API no existe: la página de ejemplo no tiene token de origin trial. ARCKHÉ AI sí lo tiene, y ahí el mismo Chromium lista las tools."
           ]
         }
       ]
@@ -108,7 +108,7 @@
         {
           "rot": "Terminal · instalar",
           "icone": "terminal",
-          "conteudo": "[ -d ~/projetos/formacao-webmcp-base-v72 ] || git clone -q https://github.com/inematds/formacao-webmcp-base-v72 ~/projetos/formacao-webmcp-base-v72\ncd ~/projetos/formacao-webmcp-base-v72/kit\nnpm ci --no-audit --no-fund && npx playwright install chromium\nnode -e \"import('playwright').then(p => console.log('playwright pronto:', p.chromium.executablePath().split('/').slice(-3).join('/')))\""
+          "conteudo": "[ -d ~/projetos/formacao-webmcp-base-v72 ] || git clone -q https://github.com/linnoff88-dev/formacao-webmcp-base-v72 ~/projetos/formacao-webmcp-base-v72\ncd ~/projetos/formacao-webmcp-base-v72/kit\nnpm ci --no-audit --no-fund && npx playwright install chromium\nnode -e \"import('playwright').then(p => console.log('playwright pronto:', p.chromium.executablePath().split('/').slice(-3).join('/')))\""
         }
       ],
       "saida": {
@@ -149,12 +149,12 @@
     {
       "tipo": "codigo",
       "titulo": "Los tres modos en un sitio real",
-      "sub": "El mismo script contra INEMA.CLUB, que es de INEMA. En tu caso, usa solo tu sitio: el script lee y lista, nunca hace clic ni ejecuta tools fuera del kit.",
+      "sub": "El mismo script contra ARCKHÉ AI, que es de ARCKHÉ. En tu caso, usa solo tu sitio: el script lee y lista, nunca hace clic ni ejecuta tools fuera del kit.",
       "blocos": [
         {
           "rot": "Terminal · un sitio público",
           "icone": "play",
-          "conteudo": "cd ~/projetos/formacao-webmcp-base-v72/kit\nnode tres-jeitos.mjs https://inema.club/; echo \"saída: $?\""
+          "conteudo": "cd ~/projetos/formacao-webmcp-base-v72/kit\nnode tres-jeitos.mjs https://ARCKHÉ AI/; echo \"saída: $?\""
         },
         {
           "rot": "Modelo · tu sitio",
@@ -167,7 +167,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>1 · ler     104.2 KB de HTML · h1: INEMA.CLUB Portal INEMA · &lt;form&gt;: 1 · &lt;label&gt;: 1\n2 · operar  146 controles na árvore · 0 sem nome (esses o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: presente neste Chromium 153.0.8010.12 · 8 ferramenta(s) registrada(s): buscar_conhecimento, buscar_cursos, comparar_cursos, consultar_atualizacoes, …\nsaída: 0</pre><p>En el sitio real, el modo 2 cuenta los controles del árbol y cuántos no tienen nombre. El modo 3 aparece: INEMA.CLUB publica un token de origin trial en una meta tag, y el Chromium 153 del kit (dentro del rango 149–156 del trial) expone <code>document.modelContext</code>. El script solo llama a <code>getTools()</code>, que lista; no ejecuta ninguna tool.</p>"
+            "html": "<pre>1 · ler     104.2 KB de HTML · h1: ARCKHÉ AI Portal ARCKHÉ · &lt;form&gt;: 1 · &lt;label&gt;: 1\n2 · operar  146 controles na árvore · 0 sem nome (esses o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: presente neste Chromium 153.0.8010.12 · 8 ferramenta(s) registrada(s): buscar_conhecimento, buscar_cursos, comparar_cursos, consultar_atualizacoes, …\nsaída: 0</pre><p>En el sitio real, el modo 2 cuenta los controles del árbol y cuántos no tienen nombre. El modo 3 aparece: ARCKHÉ AI publica un token de origin trial en una meta tag, y el Chromium 153 del kit (dentro del rango 149–156 del trial) expone <code>document.modelContext</code>. El script solo llama a <code>getTools()</code>, que lista; no ejecuta ninguna tool.</p>"
           }
         ]
       }
@@ -237,12 +237,12 @@
           "cert": true
         },
         {
-          "p": "En inema.club la manera 3 aparece con 8 tools (herramientas); en la página del kit, no. ¿Qué explica la diferencia en el mismo Chromium 153?",
+          "p": "En ARCKHÉ AI la manera 3 aparece con 8 tools (herramientas); en la página del kit, no. ¿Qué explica la diferencia en el mismo Chromium 153?",
           "opcoes": [
-            "inema.club tiene token de origin trial; el kit no",
-            "inema.club usa un servidor MCP en lugar del HTML de la página",
+            "ARCKHÉ AI tiene token de origin trial; el kit no",
+            "ARCKHÉ AI usa un servidor MCP en lugar del HTML de la página",
             "WebMCP se volvió estándar y solo la página del kit quedó desactualizada",
-            "El script del kit ejecuta las tools (herramientas) de inema.club"
+            "El script del kit ejecuta las tools (herramientas) de ARCKHÉ AI"
           ],
           "certa": 0,
           "explica": "WebMCP es un borrador (16/10/2026) y Chrome solo expone la API con token de origin trial (149 a 156) o flag local. El script solo lista con getTools(), no ejecuta nada.",
@@ -286,7 +286,7 @@
       "links": [
         {
           "t": "Kit del curso: tres-jeitos.mjs",
-          "href": "https://github.com/inematds/formacao-webmcp-base-v72/blob/main/kit/tres-jeitos.mjs",
+          "href": "https://github.com/linnoff88-dev/formacao-webmcp-base-v72/blob/main/kit/tres-jeitos.mjs",
           "icone": "arquivo"
         },
         {
@@ -300,8 +300,8 @@
           "icone": "lupa"
         },
         {
-          "t": "Formación inemaSEO: AEO y GEO sin mitos (la manera \"leer\")",
-          "href": "https://inematds.github.io/formacao-inemaseo-ias-v72/es/aulas/aeo-geo-sem-mito/",
+          "t": "Formación ARCKHÉSEO: AEO y GEO sin mitos (la manera \"leer\")",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         }
       ]

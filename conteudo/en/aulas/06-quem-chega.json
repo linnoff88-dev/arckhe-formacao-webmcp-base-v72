@@ -51,7 +51,7 @@
               "t": "PerplexityBot, Googlebot, Bingbot"
             }
           ],
-          "detalhe": "They build the index that answers use. Blocking usually takes your site out of that AI's search answers. The full decision is in the inemaSEO Program."
+          "detalhe": "They build the index that answers use. Blocking usually takes your site out of that AI's search answers. The full decision is in the ARCKHÉSEO Program."
         },
         {
           "icone": "usuario",
@@ -105,7 +105,7 @@
           "sub": "asks for",
           "texto": [
             "One group per User-agent with Allow and Disallow. Bots that follow the rule respect it; the CDN or firewall is what enforces it.",
-            "Write the decision by purpose and note the reason in a comment. The full step-by-step is in lesson 6 of the inemaSEO Foundation course."
+            "Write the decision by purpose and note the reason in a comment. The full step-by-step is in lesson 6 of the ARCKHÉSEO Foundation course."
           ]
         },
         {
@@ -153,8 +153,8 @@
             "html": "<pre>grupos no arquivo: *, chatgpt-user, claude-searchbot, claude-user, claudebot, google-extended, gptbot, oai-searchbot, perplexity-user, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot parcial (*) · Bingbot parcial (*)\nação do usuário  ChatGPT-User liberado · Claude-User liberado · Perplexity-User liberado\ntreino           GPTBot bloqueado · ClaudeBot bloqueado · Google-Extended bloqueado\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>The example shop allows search and user action and blocks training. Googlebot and Bingbot don't have their own group: the rules of <code>*</code> apply, which blocks only /admin/ (that's why \"parcial\").</p>"
           },
           {
-            "rot": "A real site: inema.club",
-            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\nação do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>inema.club allows everything, including training: it's open content and chose to allow it. The user-action bots don't have their own group and fall under <code>*</code>.</p>"
+            "rot": "A real site: ARCKHÉ AI",
+            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\nação do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>ARCKHÉ AI allows everything, including training: it's open content and chose to allow it. The user-action bots don't have their own group and fall under <code>*</code>.</p>"
           }
         ]
       }
@@ -266,8 +266,8 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "inemaSEO Program: robots.txt by purpose (subject owner)",
-          "href": "https://inematds.github.io/formacao-inemaseo-fundacao-v72/en/aulas/robots-por-finalidade/",
+          "t": "ARCKHÉSEO Program: robots.txt by purpose (subject owner)",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         },
         {
@@ -282,7 +282,7 @@
         },
         {
           "t": "Course 4 of the program: security and trust between site and agent",
-          "href": "https://inematds.github.io/formacao-webmcp-seguranca-v72/en/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         }
       ]

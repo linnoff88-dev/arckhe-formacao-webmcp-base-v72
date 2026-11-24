@@ -5,7 +5,7 @@
   "titulo": "El diagnóstico de WebMCP Readiness: ejecutarlo y leerlo sin caer en el \"nota alta = ranking\"",
   "titulo_curto": "El diagnóstico Readiness",
   "minutos": 20,
-  "lead": "WebMCP Readiness es el scanner abierto de INEMA: abre la página en un navegador aislado, solo lee, y devuelve una nota en cuatro categorías. En esta clase ejecutas el scanner en tu máquina, con versión fijada, contra la página de ejemplo y contra tu sitio, y aprendes a leer el resultado como diagnóstico, no como promesa de ranking.",
+  "lead": "WebMCP Readiness es el scanner abierto de ARCKHÉ: abre la página en un navegador aislado, solo lee, y devuelve una nota en cuatro categorías. En esta clase ejecutas el scanner en tu máquina, con versión fijada, contra la página de ejemplo y contra tu sitio, y aprendes a leer el resultado como diagnóstico, no como promesa de ranking.",
   "objetivo": "ejecutar WebMCP Readiness en tu máquina y leer el diagnóstico sin confundir nota con ranking.",
   "competencias": [
     "rodar-o-scanner-local",
@@ -53,7 +53,7 @@
           "icone": "grafico",
           "titulo": "Categorías",
           "sub": "4 notas",
-          "detalhe": "WebMCP, SEO, GEO y AEO, cada una de 0 a 100. En el código de la versión 2.2.2, la nota general pesa 30% WebMCP, 30% SEO, 20% GEO y 20% AEO. Cómo leer los pesos a fondo es la clase agente-ready de la Formación inemaSEO."
+          "detalhe": "WebMCP, SEO, GEO y AEO, cada una de 0 a 100. En el código de la versión 2.2.2, la nota general pesa 30% WebMCP, 30% SEO, 20% GEO y 20% AEO. Cómo leer los pesos a fondo es la clase agente-ready de la Formación ARCKHÉSEO."
         },
         {
           "icone": "lista",
@@ -68,12 +68,12 @@
     {
       "tipo": "codigo",
       "titulo": "Instalar el scanner con versión fija",
-      "sub": "Clona el repositorio público inematds/webmcp-readiness en una carpeta de ensayo, fija el commit 3f3d1c8 (versión 2.2.2, del 24/09/2026), instala las dependencias y corre sus pruebas.",
+      "sub": "Clona el repositorio público linnoff88-dev/webmcp-readiness en una carpeta de ensayo, fija el commit 3f3d1c8 (versión 2.2.2, del 24/09/2026), instala las dependencias y corre sus pruebas.",
       "blocos": [
         {
           "rot": "Terminal · clonar y probar",
           "icone": "baixar",
-          "conteudo": "E=${TMPDIR:-/tmp}/ensaio-formacao-webmcp-base-v72\nmkdir -p $E && cd $E\n[ -d webmcp-readiness ] || git clone -q https://github.com/inematds/webmcp-readiness\ncd webmcp-readiness && git checkout -q 3f3d1c8 && npm ci --no-audit --no-fund --silent\nnpm test 2>&1 | grep -E '^ℹ (tests|pass|fail) '"
+          "conteudo": "E=${TMPDIR:-/tmp}/ensaio-formacao-webmcp-base-v72\nmkdir -p $E && cd $E\n[ -d webmcp-readiness ] || git clone -q https://github.com/linnoff88-dev/webmcp-readiness\ncd webmcp-readiness && git checkout -q 3f3d1c8 && npm ci --no-audit --no-fund --silent\nnpm test 2>&1 | grep -E '^ℹ (tests|pass|fail) '"
         }
       ],
       "saida": {
@@ -114,12 +114,12 @@
     {
       "tipo": "codigo",
       "titulo": "El scanner en un sitio real",
-      "sub": "El mismo comando contra inema.club, que es del INEMA y registra tools WebMCP con token de origin trial. El --json guarda el reporte completo.",
+      "sub": "El mismo comando contra ARCKHÉ AI, que es del ARCKHÉ y registra tools WebMCP con token de origin trial. El --json guarda el reporte completo.",
       "blocos": [
         {
           "rot": "Terminal · un sitio público",
           "icone": "play",
-          "conteudo": "E=${TMPDIR:-/tmp}/ensaio-formacao-webmcp-base-v72\ncd ~/projetos/formacao-webmcp-base-v72/kit\nnode readiness-local.mjs $E/webmcp-readiness https://inema.club/ --json ${TMPDIR:-/tmp}/readiness-inema.json; echo \"saída: $?\""
+          "conteudo": "E=${TMPDIR:-/tmp}/ensaio-formacao-webmcp-base-v72\ncd ~/projetos/formacao-webmcp-base-v72/kit\nnode readiness-local.mjs $E/webmcp-readiness https://ARCKHÉ AI/ --json ${TMPDIR:-/tmp}/readiness-ARCKHÉ.json; echo \"saída: $?\""
         },
         {
           "rot": "Modelo · tu sitio",
@@ -132,7 +132,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>Readiness 2.2.2 · https://www.inema.club/ · nota 92 (Estrutura forte)\n  WebMCP 95 · SEO 100 · GEO 88 · AEO 77\n  falhas: 0 · avisos: 4 · ok: 26 · ferramentas WebMCP: 8 · document.modelContext no Chromium do scan: sim\n  lembrete do próprio scanner: SEO, GEO e AEO medem sinais observáveis; não garantem indexação, ranking ou citação por sistemas de IA.\nsaída: 0</pre><p>Nota 92 con 8 tools descubiertas en tiempo de ejecución, porque el Chromium 153 del kit está en el rango del origin trial. Una nota alta quiere decir que las señales están presentes; no quiere decir que un buscador o una IA vaya a citar el sitio.</p>"
+            "html": "<pre>Readiness 2.2.2 · https://www.ARCKHÉ AI/ · nota 92 (Estrutura forte)\n  WebMCP 95 · SEO 100 · GEO 88 · AEO 77\n  falhas: 0 · avisos: 4 · ok: 26 · ferramentas WebMCP: 8 · document.modelContext no Chromium do scan: sim\n  lembrete do próprio scanner: SEO, GEO e AEO medem sinais observáveis; não garantem indexação, ranking ou citação por sistemas de IA.\nsaída: 0</pre><p>Nota 92 con 8 tools descubiertas en tiempo de ejecución, porque el Chromium 153 del kit está en el rango del origin trial. Una nota alta quiere decir que las señales están presentes; no quiere decir que un buscador o una IA vaya a citar el sitio.</p>"
           }
         ]
       }
@@ -245,22 +245,22 @@
       "links": [
         {
           "t": "WebMCP Readiness (código abierto)",
-          "href": "https://github.com/inematds/webmcp-readiness",
+          "href": "https://github.com/linnoff88-dev/webmcp-readiness",
           "icone": "git"
         },
         {
           "t": "WebMCP Readiness en la web (para URLs públicas)",
-          "href": "https://webmcp.inema.pro/",
+          "href": "https://webmcp.ARCKHÉ.pro/",
           "icone": "lupa"
         },
         {
-          "t": "Formación inemaSEO: agente-ready y los pesos de la nota",
-          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/es/aulas/agente-ready/",
+          "t": "Formación ARCKHÉSEO: agente-ready y los pesos de la nota",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         },
         {
           "t": "Kit del curso: readiness-local.mjs",
-          "href": "https://github.com/inematds/formacao-webmcp-base-v72/blob/main/kit/readiness-local.mjs",
+          "href": "https://github.com/linnoff88-dev/formacao-webmcp-base-v72/blob/main/kit/readiness-local.mjs",
           "icone": "arquivo"
         }
       ]

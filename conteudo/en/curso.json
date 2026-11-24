@@ -1,42 +1,42 @@
 {
   "id": "formacao-webmcp-base-v72",
   "lang": "en",
-  "url": "https://inematds.github.io/formacao-webmcp-base-v72/en/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "Foundations: how agents use a website today",
   "sub": "WebMCP Program · course 0",
   "volta": {
     "t": "WebMCP Area",
-    "href": "https://eventos.inema.pro/webmcp/"
+    "href": "https://eventos.ARCKHÉ.pro/webmcp/"
   },
   "lado_card": {
     "rot": "WebMCP Program",
     "t": "Course 0 of 6",
     "texto": "This course's kit: the example page and the scripts that show your site the way an agent sees it. All local, no model calls, tested on 10/19/2026.",
     "link": "Open the kit/ folder on GitHub",
-    "href": "https://github.com/inematds/formacao-webmcp-base-v72/tree/main/kit"
+    "href": "https://github.com/linnoff88-dev/formacao-webmcp-base-v72/tree/main/kit"
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · WebMCP Program, course 0 of 6 · <a href=\"https://eventos.inema.pro/webmcp/\">eventos.inema.pro/webmcp</a> · <a href=\"https://github.com/inematds/formacao-webmcp-base-v72/tree/main/kit\">course kit on GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · WebMCP Program, course 0 of 6 · <a href=\"https://eventos.ARCKHÉ.pro/webmcp/\">eventos.ARCKHÉ.pro/webmcp</a> · <a href=\"https://github.com/linnoff88-dev/formacao-webmcp-base-v72/tree/main/kit\">course kit on GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {
     "webmcp-short": {
       "titulo": "WebMCP in 30 seconds",
       "duracao": "29 s",
       "formato": "9:16",
-      "mp4": "https://github.com/inematds/eventos-shorts/releases/download/v1.0.0/webmcp.mp4",
+      "mp4": "https://github.com/linnoff88-dev/eventos-shorts/releases/download/v1.0.0/webmcp.mp4",
       "vtt": "assets/vtt/webmcp-short.vtt",
       "poster": "assets/img/webmcp-short.jpg",
-      "pagina": "https://eventos.inema.pro/webmcp/",
+      "pagina": "https://eventos.ARCKHÉ.pro/webmcp/",
       "idiomas": {
         "en": {
-          "mp4": "https://github.com/inematds/eventos-shorts/releases/download/v1.0.0/webmcp-en.mp4",
+          "mp4": "https://github.com/linnoff88-dev/eventos-shorts/releases/download/v1.0.0/webmcp-en.mp4",
           "vtt": "assets/vtt/webmcp-short-en.vtt",
           "duracao": "30 s",
-          "pagina": "https://eventos.inema.pro/webmcp/en/"
+          "pagina": "https://eventos.ARCKHÉ.pro/webmcp/en/"
         },
         "es": {
-          "mp4": "https://github.com/inematds/eventos-shorts/releases/download/v1.0.0/webmcp-es.mp4",
+          "mp4": "https://github.com/linnoff88-dev/eventos-shorts/releases/download/v1.0.0/webmcp-es.mp4",
           "vtt": "assets/vtt/webmcp-short-es.vtt",
           "duracao": "28 s",
-          "pagina": "https://eventos.inema.pro/webmcp/es/"
+          "pagina": "https://eventos.ARCKHÉ.pro/webmcp/es/"
         }
       }
     }
@@ -48,7 +48,7 @@
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "See the WebMCP Area",
-      "href": "https://eventos.inema.pro/webmcp/"
+      "href": "https://eventos.ARCKHÉ.pro/webmcp/"
     },
     "capa_alt": "Dark monitor with a browser open on a form and a cable plugged into a connector beside it.",
     "numeros": [

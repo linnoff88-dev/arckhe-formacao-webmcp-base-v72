@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """robots.py — lê um robots.txt e diz, por FINALIDADE, quem você deixou entrar na raiz do site.
 
-Finalidades e nomes de robô seguem a aula 6 do curso Fundação da Formação inemaSEO
-(formacao-inemaseo-fundacao-v72), que é a dona do assunto robots.txt:
+Finalidades e nomes de robô seguem a aula 6 do curso Fundação da Formação ARCKHÉSEO
+(formacao-ARCKHÉseo-fundacao-v72), que é a dona do assunto robots.txt:
   busca            OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot, Bingbot
   ação do usuário  ChatGPT-User, Claude-User, Perplexity-User
   treino           GPTBot, ClaudeBot, Google-Extended
@@ -23,7 +23,7 @@ FINALIDADES = {
 
 def ler(fonte):
     if fonte.startswith(("http://", "https://")):
-        req = urllib.request.Request(fonte, headers={"User-Agent": "Mozilla/5.0 (kit robots.py do curso INEMA)"})
+        req = urllib.request.Request(fonte, headers={"User-Agent": "Mozilla/5.0 (kit robots.py do curso ARCKHÉ)"})
         with urllib.request.urlopen(req, timeout=15) as r:
             return r.read().decode("utf-8", "replace")
     return open(fonte, encoding="utf-8").read()
