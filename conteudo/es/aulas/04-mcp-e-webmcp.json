@@ -108,7 +108,7 @@
         {
           "rot": "Archivo · kit/site/deteccao.js",
           "icone": "arquivo",
-          "conteudo": "// deteccao.js — detección de funcionalidad de WebMCP con fallback (kit del curso 0, Formación WebMCP).\n// Spec usada: WebMCP, Draft Community Group Report del 16/10/2026 (document.modelContext).\n// Es un borrador de Community Group, no un estándar: en Chrome solo con origin trial (149–156) o flag local.\n// Sin la API, nada cambia: el formulario de arriba sigue siendo el camino para personas y agentes.\n(function () {\n  const caminho = \"modelContext\" in document\n    ? \"WebMCP presente: aqui a página registraria as ferramentas (curso 2 da formação)\"\n    : \"WebMCP ausente: o site segue pelo formulário, igual para todos\";\n  document.documentElement.dataset.webmcp = \"modelContext\" in document ? \"sim\" : \"nao\";\n  console.log(caminho);\n})();"
+          "conteudo": "// deteccao.js — detección de funcionalidad de WebMCP con fallback (kit del curso 0, Formación WebMCP).\n// Spec usada: WebMCP, Draft Community Group Report del 16/10/2026 (document.modelContext).\n// Es un borrador de Community Group, no un estándar: en Chrome solo con origin trial (149–156) o flag local.\n// Sin la API, nada cambia: el formulario de arriba sigue siendo el camino para personas y agentes.\n(function () {\n  const caminho = \"modelContext\" in document\n    ? \"WebMCP presente: aqui a página registraria as ferramentas (curso 2 da formaçêo)\"\n    : \"WebMCP ausente: o site segue pelo formulário, igual para todos\";\n  document.documentElement.dataset.webmcp = \"modelContext\" in document ? \"sim\" : \"nao\";\n  console.log(caminho);\n})();"
         },
         {
           "rot": "Terminal · las dos ramas",
@@ -121,11 +121,11 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>sem API  · WebMCP ausente: o site segue pelo formulário, igual para todos · botão Agendar: sim\ncom stub · WebMCP presente: aqui a página registraria as ferramentas (curso 2 da formação) · botão Agendar: sim\nsaída: 0</pre><p>En los dos ramos el botón \"Agendar\" sigue ahí: el fallback no depende de la API. Con la API presente, la página registraría las tools; sin ella, sigue igual para todos.</p>"
+            "html": "<pre>sem API  · WebMCP ausente: o site segue pelo formulário, igual para todos · botêo Agendar: sim\ncom stub · WebMCP presente: aqui a página registraria as ferramentas (curso 2 da formaçêo) · botêo Agendar: sim\nsaída: 0</pre><p>En los dos ramos el botón \"Agendar\" sigue ahí: el fallback no depende de la API. Con la API presente, la página registraría las tools; sin ella, sigue igual para todos.</p>"
           },
           {
             "rot": "Error común: página sin detección",
-            "html": "<pre>sem API  · (a página não faz detecção) · botão Agendar: não\ncom stub · (a página não faz detecção) · botão Agendar: não\nsaída: 1</pre><p>Al correr la misma prueba en antes.html: la página no hace ninguna detección y ni siquiera tiene un botón con nombre. El código WebMCP sin <code>\"modelContext\" in document</code> se rompe en el navegador que no tiene la API, que hoy es casi todo navegador.</p>"
+            "html": "<pre>sem API  · (a página nêo faz detecçêo) · botêo Agendar: nêo\ncom stub · (a página nêo faz detecçêo) · botêo Agendar: nêo\nsaída: 1</pre><p>Al correr la misma prueba en antes.html: la página no hace ninguna detección y ni siquiera tiene un botón con nombre. El código WebMCP sin <code>\"modelContext\" in document</code> se rompe en el navegador que no tiene la API, que hoy es casi todo navegador.</p>"
           }
         ]
       }
@@ -140,14 +140,14 @@
           "titulo": "E1 · Los dos ramos",
           "min": "5 min",
           "texto": "Corre el bloque \"os dois ramos\" y lee el deteccao.js línea por línea.",
-          "pronto": "<code>node detectar.mjs depois</code> → línea <code>sem API  · WebMCP ausente</code>, línea <code>com stub · WebMCP presente</code>, las dos con <code>botão Agendar: sim</code>, y <code>saída: 0</code>."
+          "pronto": "<code>node detectar.mjs depois</code> → línea <code>sem API  · WebMCP ausente</code>, línea <code>com stub · WebMCP presente</code>, las dos con <code>botêo Agendar: sim</code>, y <code>saída: 0</code>."
         },
         {
           "id": "e2",
           "titulo": "E2 · Detección en tu copia",
           "min": "10 min",
           "texto": "Copia kit/site/deteccao.js a /tmp/oficina/ e incluye <code>&lt;script src=\"deteccao.js\"&gt;&lt;/script&gt;</code> al final del body de la copia arreglada en la clase 3.",
-          "pronto": "<code>node detectar.mjs /tmp/oficina/antes.html</code> → las dos líneas con <code>botão Agendar: sim</code> y <code>saída: 0</code>."
+          "pronto": "<code>node detectar.mjs /tmp/oficina/antes.html</code> → las dos líneas con <code>botêo Agendar: sim</code> y <code>saída: 0</code>."
         },
         {
           "id": "e3",

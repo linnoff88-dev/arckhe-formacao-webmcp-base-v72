@@ -128,7 +128,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>spec WebMCP · versão de 2026-10-16 · not a W3C Standard\n  document.modelContext: 16 menções · navigator.modelContext: 0\nChrome · An Origin Trial is live in Chrome 149\nEdge · An Origin Trial is live in Edge 150\nFirefox · mozilla/standards-positions #1412 · position: neutral\nSafari · WebKit/standards-positions #670 · position: oppose\nlido em 19/10/2026\nsaída: 0</pre><p>The 10/16/2026 spec has 16 mentions of <code>document.modelContext</code> in its text and none of <code>navigator.modelContext</code>. There is an origin trial in Chrome 149 and Edge 150; Mozilla is neutral, WebKit is opposed.</p>"
+            "html": "<pre>spec WebMCP · versêo de 2026-10-16 · not a W3C Standard\n  document.modelContext: 16 menções · navigator.modelContext: 0\nChrome · An Origin Trial is live in Chrome 149\nEdge · An Origin Trial is live in Edge 150\nFirefox · mozilla/standards-positions #1412 · position: neutral\nSafari · WebKit/standards-positions #670 · position: oppose\nlido em 19/10/2026\nsaída: 0</pre><p>The 10/16/2026 spec has 16 mentions of <code>document.modelContext</code> in its text and none of <code>navigator.modelContext</code>. There is an origin trial in Chrome 149 and Edge 150; Mozilla is neutral, WebKit is opposed.</p>"
           },
           {
             "rot": "Common mistake: copying the date from a post",
@@ -147,7 +147,7 @@
           "titulo": "E1 · Today's state",
           "min": "5 min",
           "texto": "Run the \"read the state\" block. Compare each line with the output captured on 10/19/2026 and note what changed.",
-          "pronto": "<code>bash estado.sh</code> prints a <code>spec WebMCP · versão de</code> line with a date, the <code>Chrome ·</code>, <code>Edge ·</code>, <code>Firefox ·</code> and <code>Safari ·</code> lines, and ends with <code>saída: 0</code>."
+          "pronto": "<code>bash estado.sh</code> prints a <code>spec WebMCP · versêo de</code> line with a date, the <code>Chrome ·</code>, <code>Edge ·</code>, <code>Firefox ·</code> and <code>Safari ·</code> lines, and ends with <code>saída: 0</code>."
         },
         {
           "id": "e2",

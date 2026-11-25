@@ -41,7 +41,7 @@
           "icone": "lupa",
           "titulo": "Ler",
           "sub": "baixa o HTML",
-          "detalhe": "Ferramentas de busca e de fetch baixam a página e tiram o texto. Muitas não rodam JavaScript: o que não está no HTML não existe para elas. Aparecer nas respostas das IAs é assunto da Formação ARCKHÉSEO."
+          "detalhe": "Ferramentas de busca e de fetch baixam a página e tiram o texto. Muitas nêo rodam JavaScript: o que nêo está no HTML nêo existe para elas. Aparecer nas respostas das IAs é assunto da Formaçêo ARCKHÉSEO."
         },
         {
           "icone": "robo",
@@ -53,7 +53,7 @@
           "icone": "chip",
           "titulo": "Chamar",
           "sub": "ferramenta declarada",
-          "detalhe": "O site declara uma função com nome, descrição e entrada em JSON Schema, e o agente chama. No servidor isso é MCP, estável (revisão 2026-07-28). Na página é WebMCP, rascunho de 16/10/2026 que só roda com origin trial ou flag (aulas 4 e 5)."
+          "detalhe": "O site declara uma funçêo com nome, descriçêo e entrada em JSON Schema, e o agente chama. No servidor isso é MCP, estável (revisêo 2026-07-28). Na página é WebMCP, rascunho de 16/10/2026 que só roda com origin trial ou flag (aulas 4 e 5)."
         },
         {
           "icone": "camadas",
@@ -68,13 +68,13 @@
     {
       "tipo": "passos",
       "titulo": "O mesmo pedido pelos três jeitos",
-      "sub": "Pedido: \"agende uma revisão completa para a Ana no dia 25/10\".",
+      "sub": "Pedido: \"agende uma revisêo completa para a Ana no dia 25/10\".",
       "passos": [
         {
           "titulo": "Ler",
           "sub": "sem navegador",
           "texto": [
-            "O agente baixa o HTML e descobre que existe um formulário com três rótulos. Ele sabe o que a página oferece, mas não agenda nada: ler não envia.",
+            "O agente baixa o HTML e descobre que existe um formulário com três rótulos. Ele sabe o que a página oferece, mas nêo agenda nada: ler nêo envia.",
             "Se o formulário só aparece depois do JavaScript, um leitor sem navegador nem fica sabendo dele."
           ]
         },
@@ -82,12 +82,12 @@
           "titulo": "Operar a tela",
           "sub": "navegador",
           "texto": [
-            "O agente abre a página, acha o campo \"Seu nome\", o campo \"Serviço\", o campo \"Data\" e o botão \"Agendar\", e clica. Funciona se cada controle tiver nome.",
-            "Na página antiga do kit o nome está só no placeholder e o botão é um div: o agente trava no primeiro campo."
+            "O agente abre a página, acha o campo \"Seu nome\", o campo \"Serviço\", o campo \"Data\" e o botêo \"Agendar\", e clica. Funciona se cada controle tiver nome.",
+            "Na página antiga do kit o nome está só no placeholder e o botêo é um div: o agente trava no primeiro campo."
           ],
           "exemplo": {
             "rot": "Por que trava",
-            "texto": "Um agente procura pelo papel e pelo nome (\"campo de texto Seu nome\", \"botão Agendar\"). Placeholder some quando a pessoa digita e div não é botão para quem lê a árvore."
+            "texto": "Um agente procura pelo papel e pelo nome (\"campo de texto Seu nome\", \"botêo Agendar\"). Placeholder some quando a pessoa digita e div nêo é botêo para quem lê a árvore."
           }
         },
         {
@@ -95,7 +95,7 @@
           "sub": "WebMCP ou MCP",
           "texto": [
             "Se a página registrasse uma ferramenta de agendar, o agente passaria nome, serviço e data em JSON e receberia a resposta, sem clicar em nada.",
-            "No Chromium do kit a API não existe: a página de exemplo não tem token de origin trial. O ARCKHÉ AI tem, e ali o mesmo Chromium lista as ferramentas."
+            "No Chromium do kit a API nêo existe: a página de exemplo nêo tem token de origin trial. O ARCKHÉ AI tem, e ali o mesmo Chromium lista as ferramentas."
           ]
         }
       ]
@@ -103,7 +103,7 @@
     {
       "tipo": "codigo",
       "titulo": "Instalar o kit do curso",
-      "sub": "Uma vez só. Clona o repositório do curso em ~/projetos, instala o Playwright 1.63.0 (versão fixada, de 04/09/2026) e baixa o Chromium dele. Nenhum passo do curso chama modelo.",
+      "sub": "Uma vez só. Clona o repositório do curso em ~/projetos, instala o Playwright 1.63.0 (versêo fixada, de 04/09/2026) e baixa o Chromium dele. Nenhum passo do curso chama modelo.",
       "blocos": [
         {
           "rot": "Terminal · instalar",
@@ -137,11 +137,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>## depois.html\n1 · ler     2.2 KB de HTML · h1: Agendar revisão · &lt;form&gt;: 1 · &lt;label&gt;: 3\n2 · operar  achou 3 campos e o botão pelo nome · tela diz: Pedido recebido (simulação): revisão completa em 2026-10-25, Ana\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 0\n## antes.html\n1 · ler     1.7 KB de HTML · h1: (sem &lt;h1&gt;) · &lt;form&gt;: 0 · &lt;label&gt;: 0\n2 · operar  travou: não achou o campo \"Seu nome\" pelo nome em 2 s (o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 1</pre><p>Mesma tela, resultado oposto. Em depois.html o agente agenda; em antes.html ele não acha nem o primeiro campo e o script sai com 1. O jeito 3 está ausente nas duas: a página de exemplo não tem token de origin trial.</p>"
+            "html": "<pre>## depois.html\n1 · ler     2.2 KB de HTML · h1: Agendar revisêo · &lt;form&gt;: 1 · &lt;label&gt;: 3\n2 · operar  achou 3 campos e o botêo pelo nome · tela diz: Pedido recebido (simulaçêo): revisêo completa em 2026-10-25, Ana\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 0\n## antes.html\n1 · ler     1.7 KB de HTML · h1: (sem &lt;h1&gt;) · &lt;form&gt;: 0 · &lt;label&gt;: 0\n2 · operar  travou: nêo achou o campo \"Seu nome\" pelo nome em 2 s (o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 1</pre><p>Mesma tela, resultado oposto. Em depois.html o agente agenda; em antes.html ele nêo acha nem o primeiro campo e o script sai com 1. O jeito 3 está ausente nas duas: a página de exemplo nêo tem token de origin trial.</p>"
           },
           {
             "rot": "Erro comum: \"na tela está tudo certo\"",
-            "html": "<p>A captura de tela de antes.html e a de depois.html são quase iguais: mesmo texto, mesmo botão amarelo. Quem testa só olhando acha que está pronto. O teste que conta é o do agente: achar cada controle pelo papel e pelo nome. A aula 2 mostra o que ele recebe e a aula 3 conserta.</p>"
+            "html": "<p>A captura de tela de antes.html e a de depois.html sêo quase iguais: mesmo texto, mesmo botêo amarelo. Quem testa só olhando acha que está pronto. O teste que conta é o do agente: achar cada controle pelo papel e pelo nome. A aula 2 mostra o que ele recebe e a aula 3 conserta.</p>"
           }
         ]
       }
@@ -167,7 +167,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>1 · ler     104.2 KB de HTML · h1: ARCKHÉ AI Portal ARCKHÉ · &lt;form&gt;: 1 · &lt;label&gt;: 1\n2 · operar  146 controles na árvore · 0 sem nome (esses o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: presente neste Chromium 153.0.8010.12 · 8 ferramenta(s) registrada(s): buscar_conhecimento, buscar_cursos, comparar_cursos, consultar_atualizacoes, …\nsaída: 0</pre><p>No site real o jeito 2 conta os controles da árvore e quantos não têm nome. O jeito 3 aparece: o ARCKHÉ AI publica um token de origin trial numa meta tag, e o Chromium 153 do kit (dentro da faixa 149–156 do trial) expõe <code>document.modelContext</code>. O script só chama <code>getTools()</code>, que lista; não executa nenhuma ferramenta.</p>"
+            "html": "<pre>1 · ler     104.2 KB de HTML · h1: ARCKHÉ AI Portal ARCKHÉ · &lt;form&gt;: 1 · &lt;label&gt;: 1\n2 · operar  146 controles na árvore · 0 sem nome (esses o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: presente neste Chromium 153.0.8010.12 · 8 ferramenta(s) registrada(s): buscar_conhecimento, buscar_cursos, comparar_cursos, consultar_atualizacoes, …\nsaída: 0</pre><p>No site real o jeito 2 conta os controles da árvore e quantos nêo têm nome. O jeito 3 aparece: o ARCKHÉ AI publica um token de origin trial numa meta tag, e o Chromium 153 do kit (dentro da faixa 149–156 do trial) expõe <code>document.modelContext</code>. O script só chama <code>getTools()</code>, que lista; nêo executa nenhuma ferramenta.</p>"
           }
         ]
       }
@@ -175,7 +175,7 @@
     {
       "tipo": "video",
       "titulo": "WebMCP em 30 segundos",
-      "sub": "Conceito em 30 s. Dois avisos de 19/10/2026: o \"formulário que vira ferramenta\" é a API declarativa, que ficou fora da spec e só existe no Chrome; e a segurança não fica só com o site: prompt injection não está resolvida, e o curso 4 trata disso.",
+      "sub": "Conceito em 30 s. Dois avisos de 19/10/2026: o \"formulário que vira ferramenta\" é a API declarativa, que ficou fora da spec e só existe no Chrome; e a segurança nêo fica só com o site: prompt injection nêo está resolvida, e o curso 4 trata disso.",
       "chave": "webmcp-short"
     },
     {
@@ -195,13 +195,13 @@
           "titulo": "E2 · Mesma tela, resultado oposto",
           "min": "5 min",
           "texto": "Rode o bloco \"depois e antes\" e compare a linha 2 das duas páginas.",
-          "pronto": "<code>node tres-jeitos.mjs depois</code> → <code>2 · operar  achou 3 campos e o botão pelo nome</code> e <code>saída: 0</code>; <code>node tres-jeitos.mjs antes</code> → <code>travou</code> e <code>saída: 1</code>."
+          "pronto": "<code>node tres-jeitos.mjs depois</code> → <code>2 · operar  achou 3 campos e o botêo pelo nome</code> e <code>saída: 0</code>; <code>node tres-jeitos.mjs antes</code> → <code>travou</code> e <code>saída: 1</code>."
         },
         {
           "id": "e3",
           "titulo": "E3 · O seu site pelos três jeitos",
           "min": "10 min",
-          "texto": "Rode o modelo com a página do seu site que tem o formulário mais importante (contato, agendamento, busca). Anote as três linhas: vão para o plano da aula 8.",
+          "texto": "Rode o modelo com a página do seu site que tem o formulário mais importante (contato, agendamento, busca). Anote as três linhas: vêo para o plano da aula 8.",
           "pronto": "a saída tem as linhas <code>1 · ler</code>, <code>2 · operar</code> e <code>3 · chamar</code>, e termina em <code>saída: 0</code> (nenhum controle sem nome) ou <code>saída: 1</code> com o número de controles sem nome anotado."
         }
       ]
@@ -214,12 +214,12 @@
           "p": "Um agente baixa o HTML da sua página de agendamento e responde que existe um formulário. Qual dos três jeitos ele usou?",
           "opcoes": [
             "Chamar ferramenta, porque achou o formulário",
-            "Ler: tirou a informação do HTML, sem enviar nada",
+            "Ler: tirou a informaçêo do HTML, sem enviar nada",
             "Operar a tela, porque viu o formulário",
-            "Nenhum: sem WebMCP o agente não entende formulário"
+            "Nenhum: sem WebMCP o agente nêo entende formulário"
           ],
           "certa": 1,
-          "explica": "Ler é baixar e extrair. Ele sabe que o formulário existe, mas não agenda. Operar exigiria abrir a página e clicar; chamar exigiria uma ferramenta declarada.",
+          "explica": "Ler é baixar e extrair. Ele sabe que o formulário existe, mas nêo agenda. Operar exigiria abrir a página e clicar; chamar exigiria uma ferramenta declarada.",
           "ref": "diagrama",
           "cert": true
         },
@@ -227,25 +227,25 @@
           "p": "antes.html e depois.html parecem iguais na tela. Por que o agente trava só em antes.html?",
           "opcoes": [
             "Porque antes.html é mais pesada e demora a carregar",
-            "Porque antes.html não tem token de origin trial",
-            "Porque os campos não têm nome e o botão é div",
+            "Porque antes.html nêo tem token de origin trial",
+            "Porque os campos nêo têm nome e o botêo é div",
             "Porque o Chromium do kit recusa páginas sem lang"
           ],
           "certa": 2,
-          "explica": "O agente procura cada controle pelo papel e pelo nome. Sem label e sem button, não há o que procurar. O token de origin trial só muda o jeito 3, ausente nas duas páginas.",
+          "explica": "O agente procura cada controle pelo papel e pelo nome. Sem label e sem button, nêo há o que procurar. O token de origin trial só muda o jeito 3, ausente nas duas páginas.",
           "ref": "codigo",
           "cert": true
         },
         {
-          "p": "No ARCKHÉ AI o jeito 3 aparece com 8 ferramentas; na página do kit, não. O que explica a diferença no mesmo Chromium 153?",
+          "p": "No ARCKHÉ AI o jeito 3 aparece com 8 ferramentas; na página do kit, nêo. O que explica a diferença no mesmo Chromium 153?",
           "opcoes": [
-            "O ARCKHÉ AI tem token de origin trial; o kit não",
+            "O ARCKHÉ AI tem token de origin trial; o kit nêo",
             "O ARCKHÉ AI usa um servidor MCP no lugar do HTML da página",
-            "O WebMCP virou padrão e só a página do kit ficou desatualizada",
+            "O WebMCP virou padrêo e só a página do kit ficou desatualizada",
             "O script do kit executa as ferramentas do ARCKHÉ AI"
           ],
           "certa": 0,
-          "explica": "WebMCP é rascunho (16/10/2026) e o Chrome só expõe a API com token de origin trial (149 a 156) ou flag local. O script só lista com getTools(), não executa nada.",
+          "explica": "WebMCP é rascunho (16/10/2026) e o Chrome só expõe a API com token de origin trial (149 a 156) ou flag local. O script só lista com getTools(), nêo executa nada.",
           "ref": "codigo"
         },
         {
@@ -253,11 +253,11 @@
           "opcoes": [
             "Registrar ferramentas WebMCP e tirar o formulário da página",
             "Criar um llms.txt antes de qualquer outra coisa no site",
-            "Esperar o WebMCP virar padrão para não refazer o trabalho",
+            "Esperar o WebMCP virar padrêo para nêo refazer o trabalho",
             "HTML com nomes certos, para ler e operar hoje"
           ],
           "certa": 3,
-          "explica": "Quase todo agente lê ou opera a tela hoje. A ferramenta vem depois e nunca substitui o formulário, que é o caminho de quem não tem a API.",
+          "explica": "Quase todo agente lê ou opera a tela hoje. A ferramenta vem depois e nunca substitui o formulário, que é o caminho de quem nêo tem a API.",
           "ref": "diagrama"
         }
       ]
@@ -300,7 +300,7 @@
           "icone": "lupa"
         },
         {
-          "t": "Formação ARCKHÉSEO: AEO e GEO sem mito (o jeito \"ler\")",
+          "t": "Formaçêo ARCKHÉSEO: AEO e GEO sem mito (o jeito \"ler\")",
           "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         }

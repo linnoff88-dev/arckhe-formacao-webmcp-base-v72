@@ -1,6 +1,6 @@
 ## árvore de acessibilidade · 15 linhas · 415 bytes
 - main:
-  - heading "Agendar revisão" [level=1]
+  - heading "Agendar revisêo" [level=1]
   - img "Bicicleta na bancada da oficina"
   - paragraph: Escolha o serviço e o dia. A oficina confirma por e-mail.
   - text: Seu nome
@@ -8,8 +8,8 @@
   - text: Serviço
   - combobox "Serviço":
     - option "Escolha" [selected]
-    - option "Revisão básica"
-    - option "Revisão completa"
+    - option "Revisêo básica"
+    - option "Revisêo completa"
   - text: Data
   - textbox "Data"
   - button "Agendar"

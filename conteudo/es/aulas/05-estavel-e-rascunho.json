@@ -128,7 +128,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>spec WebMCP · versão de 2026-10-16 · not a W3C Standard\n  document.modelContext: 16 menções · navigator.modelContext: 0\nChrome · An Origin Trial is live in Chrome 149\nEdge · An Origin Trial is live in Edge 150\nFirefox · mozilla/standards-positions #1412 · position: neutral\nSafari · WebKit/standards-positions #670 · position: oppose\nlido em 19/10/2026\nsaída: 0</pre><p>Spec del 16/10/2026 con 16 menciones a <code>document.modelContext</code> en el texto y ninguna a <code>navigator.modelContext</code>. Origin trial en Chrome 149 y en Edge 150; Mozilla neutral, WebKit en contra.</p>"
+            "html": "<pre>spec WebMCP · versêo de 2026-10-16 · not a W3C Standard\n  document.modelContext: 16 menções · navigator.modelContext: 0\nChrome · An Origin Trial is live in Chrome 149\nEdge · An Origin Trial is live in Edge 150\nFirefox · mozilla/standards-positions #1412 · position: neutral\nSafari · WebKit/standards-positions #670 · position: oppose\nlido em 19/10/2026\nsaída: 0</pre><p>Spec del 16/10/2026 con 16 menciones a <code>document.modelContext</code> en el texto y ninguna a <code>navigator.modelContext</code>. Origin trial en Chrome 149 y en Edge 150; Mozilla neutral, WebKit en contra.</p>"
           },
           {
             "rot": "Error común: copiar la fecha de un post",
@@ -147,7 +147,7 @@
           "titulo": "E1 · El estado de hoy",
           "min": "5 min",
           "texto": "Ejecuta el bloque \"leer el estado\". Compara cada línea con la salida capturada el 19/10/2026 y anota qué cambió.",
-          "pronto": "<code>bash estado.sh</code> imprime una línea <code>spec WebMCP · versão de</code> con fecha, las líneas <code>Chrome ·</code>, <code>Edge ·</code>, <code>Firefox ·</code> y <code>Safari ·</code>, y termina en <code>saída: 0</code>."
+          "pronto": "<code>bash estado.sh</code> imprime una línea <code>spec WebMCP · versêo de</code> con fecha, las líneas <code>Chrome ·</code>, <code>Edge ·</code>, <code>Firefox ·</code> y <code>Safari ·</code>, y termina en <code>saída: 0</code>."
         },
         {
           "id": "e2",

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# capturar.sh — roda cada bloco "Terminal" do curso (kit/blocos/*.sh, em ordem alfabética = ordem de execução)
+# capturar.sh — roda cada bloco "Terminal" do curso (kit/blocos/*.sh, em ordem alfabética = ordem de execuçêo)
 # e grava a saída em kit/saidas/. É daqui que saem as abas "Saída capturada" das aulas.
 # Nenhum bloco chama modelo nem gasta cota. Uso: bash capturar.sh [bloco ...]
 set -uo pipefail

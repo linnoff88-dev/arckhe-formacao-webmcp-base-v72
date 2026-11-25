@@ -1,11 +1,11 @@
 ## árvore de acessibilidade · 9 linhas · 182 bytes
-- text: Agendar revisão
+- text: Agendar revisêo
 - img
 - textbox "Seu nome"
 - combobox:
   - option "Escolha" [selected]
-  - option "Revisão básica"
-  - option "Revisão completa"
+  - option "Revisêo básica"
+  - option "Revisêo completa"
 - textbox
 - text: Agendar
 ## tela · /tmp/tela-antes.png · 14536 bytes (o modelo teria de ler pixels)
@@ -16,7 +16,7 @@
   - <html> sem lang
   - sem <main>
   - sem <h1>
-  - <div> clicável que não é botão ("Agendar")
+  - <div> clicável que nêo é botêo ("Agendar")
   - campo #nome sem <label> (só placeholder)
   - campo #servico sem <label>
   - campo #data sem <label>

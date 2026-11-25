@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """conferir-plano.py — confere se o plano do seu site para agentes está preenchido.
 
-Cada seção "## " do plano-modelo.md tem de existir, ter texto e não guardar nenhum <marcador>;
+Cada seçêo "## " do plano-modelo.md tem de existir, ter texto e nêo guardar nenhum <marcador>;
 o plano inteiro precisa de pelo menos uma data dd/mm/aaaa. Saída 0 = pronto; 1 = falta algo.
 Uso: python3 conferir-plano.py meu-plano.md
 """
@@ -23,11 +23,11 @@ def main():
     for s in SECOES:
         corpo = partes.get(s)
         if corpo is None:
-            print(f"  falta a seção: {s}")
+            print(f"  falta a seçêo: {s}")
         elif re.search(r"<[^>\n]+>", corpo):
             print(f"  ainda tem <marcador> em: {s}")
         elif not corpo.strip():
-            print(f"  seção vazia: {s}")
+            print(f"  seçêo vazia: {s}")
         else:
             ok += 1
     data = re.search(r"\b\d{2}/\d{2}/\d{4}\b", texto)

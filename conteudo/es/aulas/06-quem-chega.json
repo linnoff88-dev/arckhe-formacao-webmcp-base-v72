@@ -150,11 +150,11 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>grupos no arquivo: *, chatgpt-user, claude-searchbot, claude-user, claudebot, google-extended, gptbot, oai-searchbot, perplexity-user, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot parcial (*) · Bingbot parcial (*)\nação do usuário  ChatGPT-User liberado · Claude-User liberado · Perplexity-User liberado\ntreino           GPTBot bloqueado · ClaudeBot bloqueado · Google-Extended bloqueado\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>El taller de ejemplo permite la búsqueda y la acción del usuario, y bloquea el entrenamiento. Googlebot y Bingbot no tienen grupo propio: valen las reglas del <code>*</code>, que bloquea solo /admin/ (por eso \"parcial\").</p>"
+            "html": "<pre>grupos no arquivo: *, chatgpt-user, claude-searchbot, claude-user, claudebot, google-extended, gptbot, oai-searchbot, perplexity-user, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot parcial (*) · Bingbot parcial (*)\naçêo do usuário  ChatGPT-User liberado · Claude-User liberado · Perplexity-User liberado\ntreino           GPTBot bloqueado · ClaudeBot bloqueado · Google-Extended bloqueado\nlembrete: robots.txt pede, nêo identifica. Quem prova quem é: assinatura na requisiçêo (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>El taller de ejemplo permite la búsqueda y la acción del usuario, y bloquea el entrenamiento. Googlebot y Bingbot no tienen grupo propio: valen las reglas del <code>*</code>, que bloquea solo /admin/ (por eso \"parcial\").</p>"
           },
           {
             "rot": "Un sitio real: ARCKHÉ AI",
-            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\nação do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>ARCKHÉ AI permite todo, incluido el entrenamiento: es contenido abierto y eligió permitirlo. Los bots de acción del usuario no tienen grupo propio y caen en el <code>*</code>.</p>"
+            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\naçêo do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, nêo identifica. Quem prova quem é: assinatura na requisiçêo (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>ARCKHÉ AI permite todo, incluido el entrenamiento: es contenido abierto y eligió permitirlo. Los bots de acción del usuario no tienen grupo propio y caen en el <code>*</code>.</p>"
           }
         ]
       }
@@ -176,7 +176,7 @@
           "titulo": "E2 · Tu robots.txt",
           "min": "10 min",
           "texto": "Ejecuta el modelo con la dirección de tu sitio. Copia las líneas de búsqueda, acción del usuario y entrenamiento al plan (sección \"Quem pode entrar\").",
-          "pronto": "la salida tiene las líneas <code>busca</code>, <code>ação do usuário</code> y <code>treino</code> y termina en <code>saída: 0</code>."
+          "pronto": "la salida tiene las líneas <code>busca</code>, <code>açêo do usuário</code> y <code>treino</code> y termina en <code>saída: 0</code>."
         },
         {
           "id": "e3",

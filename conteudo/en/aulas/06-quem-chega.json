@@ -150,11 +150,11 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>grupos no arquivo: *, chatgpt-user, claude-searchbot, claude-user, claudebot, google-extended, gptbot, oai-searchbot, perplexity-user, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot parcial (*) · Bingbot parcial (*)\nação do usuário  ChatGPT-User liberado · Claude-User liberado · Perplexity-User liberado\ntreino           GPTBot bloqueado · ClaudeBot bloqueado · Google-Extended bloqueado\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>The example shop allows search and user action and blocks training. Googlebot and Bingbot don't have their own group: the rules of <code>*</code> apply, which blocks only /admin/ (that's why \"parcial\").</p>"
+            "html": "<pre>grupos no arquivo: *, chatgpt-user, claude-searchbot, claude-user, claudebot, google-extended, gptbot, oai-searchbot, perplexity-user, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot parcial (*) · Bingbot parcial (*)\naçêo do usuário  ChatGPT-User liberado · Claude-User liberado · Perplexity-User liberado\ntreino           GPTBot bloqueado · ClaudeBot bloqueado · Google-Extended bloqueado\nlembrete: robots.txt pede, nêo identifica. Quem prova quem é: assinatura na requisiçêo (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>The example shop allows search and user action and blocks training. Googlebot and Bingbot don't have their own group: the rules of <code>*</code> apply, which blocks only /admin/ (that's why \"parcial\").</p>"
           },
           {
             "rot": "A real site: ARCKHÉ AI",
-            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\nação do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>ARCKHÉ AI allows everything, including training: it's open content and chose to allow it. The user-action bots don't have their own group and fall under <code>*</code>.</p>"
+            "html": "<pre>grupos no arquivo: *, bingbot, claude-searchbot, claudebot, googlebot, oai-searchbot, perplexitybot\nbusca            OAI-SearchBot liberado · Claude-SearchBot liberado · PerplexityBot liberado · Googlebot liberado · Bingbot liberado\naçêo do usuário  ChatGPT-User liberado (*) · Claude-User liberado (*) · Perplexity-User liberado (*)\ntreino           GPTBot liberado (*) · ClaudeBot liberado · Google-Extended liberado (*)\nlembrete: robots.txt pede, nêo identifica. Quem prova quem é: assinatura na requisiçêo (Web Bot Auth, rascunho IETF).\nsaída: 0</pre><p>ARCKHÉ AI allows everything, including training: it's open content and chose to allow it. The user-action bots don't have their own group and fall under <code>*</code>.</p>"
           }
         ]
       }
@@ -175,8 +175,8 @@
           "id": "e2",
           "titulo": "E2 · Your robots.txt",
           "min": "10 min",
-          "texto": "Run the template with your site's address. Copy the busca, ação do usuário, and treino lines into the plan (the \"Quem pode entrar\" section).",
-          "pronto": "the output has the <code>busca</code>, <code>ação do usuário</code>, and <code>treino</code> lines and ends with <code>saída: 0</code>."
+          "texto": "Run the template with your site's address. Copy the busca, açêo do usuário, and treino lines into the plan (the \"Quem pode entrar\" section).",
+          "pronto": "the output has the <code>busca</code>, <code>açêo do usuário</code>, and <code>treino</code> lines and ends with <code>saída: 0</code>."
         },
         {
           "id": "e3",

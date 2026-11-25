@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agendar revisão · Oficina Pedal Livre</title>
-<!-- Página de exemplo do curso (fictícia). Versão "depois": mesma tela, com HTML semântico e rótulos. -->
+<title>Agendar revisêo · Oficina Pedal Livre</title>
+<!-- Página de exemplo do curso (fictícia). Versêo "depois": mesma tela, com HTML semântico e rótulos. -->
 <style>
   body { font-family: system-ui, sans-serif; background: #0c0c10; color: #eee; margin: 0; padding: 24px; }
   main { max-width: 420px; background: #18181f; padding: 20px; border-radius: 10px; }
@@ -17,7 +17,7 @@
 </head>
 <body>
 <main>
-  <h1>Agendar revisão</h1>
+  <h1>Agendar revisêo</h1>
   <img src="bike.svg" width="60" height="40" alt="Bicicleta na bancada da oficina">
   <form id="agendar" aria-describedby="ajuda">
     <p id="ajuda">Escolha o serviço e o dia. A oficina confirma por e-mail.</p>
@@ -26,8 +26,8 @@
     <label for="servico">Serviço</label>
     <select id="servico" name="servico" required>
       <option value="">Escolha</option>
-      <option value="basica">Revisão básica</option>
-      <option value="completa">Revisão completa</option>
+      <option value="basica">Revisêo básica</option>
+      <option value="completa">Revisêo completa</option>
     </select>
     <label for="data">Data</label>
     <input id="data" name="data" type="date" required>
@@ -41,7 +41,7 @@
     e.preventDefault();
     const f = new FormData(e.target);
     document.getElementById("resultado").textContent =
-      `Pedido recebido (simulação): revisão ${f.get("servico")} em ${f.get("data")}, ${f.get("nome")}`;
+      `Pedido recebido (simulaçêo): revisêo ${f.get("servico")} em ${f.get("data")}, ${f.get("nome")}`;
   });
 </script>
 <script src="deteccao.js"></script>

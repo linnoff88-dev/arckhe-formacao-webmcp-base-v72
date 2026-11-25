@@ -9,18 +9,18 @@ Data do diagnóstico: <dd/mm/aaaa>
 
 ## O que o agente enxerga
 Problemas do arvore.mjs antes: <número> · depois das correções: <número>
-<as correções feitas: rótulos, botão de verdade, main, h1, lang, alt>
+<as correções feitas: rótulos, botêo de verdade, main, h1, lang, alt>
 
 ## Quem pode entrar
-<saída do robots.py: busca, ação do usuário e treino, e a decisão anotada>
+<saída do robots.py: busca, açêo do usuário e treino, e a decisêo anotada>
 
 ## Readiness
-Nota: <nota> em <dd/mm/aaaa> (diagnóstico, não ranking)
+Nota: <nota> em <dd/mm/aaaa> (diagnóstico, nêo ranking)
 <as três falhas ou avisos que vou tratar primeiro e por quê>
 
 ## WebMCP
 Estado lido em <dd/mm/aaaa>: spec de <data>, <navegadores com origin trial>
-Decisão: <esperar | laboratório no curso 2 | já registro ferramentas com detecção e fallback>
+Decisêo: <esperar | laboratório no curso 2 | já registro ferramentas com detecçêo e fallback>
 
 ## Próximos passos
-<o próximo curso da formação e a data em que vou rever este plano>
+<o próximo curso da formaçêo e a data em que vou rever este plano>

@@ -3,19 +3,19 @@
   "lang": "pt-BR",
   "url": "https://linnoff88-dev.github.io/
   "nome": "Base: como os agentes usam um site hoje",
-  "sub": "Formação WebMCP · curso 0",
+  "sub": "Formaçêo WebMCP · curso 0",
   "volta": {
     "t": "Área WebMCP",
     "href": "https://eventos.ARCKHÉ.pro/webmcp/"
   },
   "lado_card": {
-    "rot": "Formação WebMCP",
+    "rot": "Formaçêo WebMCP",
     "t": "Curso 0 de 6",
     "texto": "O kit deste curso: a página de exemplo e os scripts que mostram o seu site como um agente vê. Tudo local, sem chamar modelo, testado em 19/10/2026.",
     "link": "Abrir a pasta kit/ no GitHub",
     "href": "https://github.com/linnoff88-dev/formacao-webmcp-base-v72/tree/main/kit"
   },
-  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formação WebMCP, curso 0 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/webmcp/\">eventos.ARCKHÉ.pro/webmcp</a> · <a href=\"https://github.com/linnoff88-dev/formacao-webmcp-base-v72/tree/main/kit\">kit do curso no GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formaçêo WebMCP, curso 0 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/webmcp/\">eventos.ARCKHÉ.pro/webmcp</a> · <a href=\"https://github.com/linnoff88-dev/formacao-webmcp-base-v72/tree/main/kit\">kit do curso no GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {
     "webmcp-short": {
       "titulo": "WebMCP em 30 segundos",
@@ -42,7 +42,7 @@
     }
   },
   "inicio": {
-    "kicker": "Formação WebMCP · curso 0 de 6 · 8 aulas",
+    "kicker": "Formaçêo WebMCP · curso 0 de 6 · 8 aulas",
     "titulo": "Base: como os agentes usam um site hoje, e o que o seu site mostra a eles",
     "lead": "Ler, operar a tela e chamar ferramenta: os três jeitos de um agente usar o seu site. Você vê a árvore de acessibilidade que ele recebe, conserta o HTML, situa MCP e WebMCP, lê o estado do rascunho com data e sai com o diagnóstico do seu site. Tudo local, sem gastar cota.",
     "cta": "Começar pela aula 1",
@@ -85,17 +85,17 @@
         "itens": [
           "Rodar contra a sua página os três jeitos de um agente usar um site e ver qual funciona.",
           "Ler a árvore de acessibilidade que o agente recebe e zerar os problemas do HTML.",
-          "Dizer, com data e fonte, em que pé estão o WebMCP e as posições dos navegadores.",
+          "Dizer, com data e fonte, em que pé estêo o WebMCP e as posições dos navegadores.",
           "Rodar o WebMCP Readiness na sua máquina e montar o plano do seu site para agentes."
         ]
       },
       {
-        "t": "Onde este curso entra na Formação WebMCP",
+        "t": "Onde este curso entra na Formaçêo WebMCP",
         "itens": [
           "É o curso 0: a base dos outros cinco. Ordem sugerida: 0 → 1 → 2 → 3 → 4 → 5.",
           "Depois dele: 1 · servidor MCP do seu serviço, 2 · WebMCP na página, 3 · agentes de navegador, 4 · segurança, 5 · expert.",
           "Antes de começar: Node 20 ou mais novo, git e Python 3. Linux ou macOS; no Windows, use o WSL.",
-          "O kit, a página de exemplo e as mensagens dos scripts estão em português em todas as versões do curso; os comandos são os mesmos."
+          "O kit, a página de exemplo e as mensagens dos scripts estêo em português em todas as versões do curso; os comandos sêo os mesmos."
         ]
       }
     ]
@@ -114,7 +114,7 @@
     "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
     "copiar": "Copiar",
     "copiado": "Copiado",
-    "selo_simulacao": "Simulação: exemplo ilustrativo",
+    "selo_simulacao": "Simulaçêo: exemplo ilustrativo",
     "selo_real": "Exemplo do repositório",
     "pronto_quando": "Pronto quando:",
     "fiz": "Fiz este exercício",
@@ -123,8 +123,8 @@
     "de": "de",
     "cert_tag": "competência",
     "correto": "Correto",
-    "errado": "Não é essa",
-    "quiz_aguarda": "Escolha uma alternativa. A explicação aparece depois da sua tentativa.",
+    "errado": "Nêo é essa",
+    "quiz_aguarda": "Escolha uma alternativa. A explicaçêo aparece depois da sua tentativa.",
     "proxima_pergunta": "Próxima pergunta",
     "quiz_ver": "Ver resultado",
     "quiz_fim": "Teste concluído",
@@ -151,7 +151,7 @@
     "baixar_ics": "Baixar para o calendário (.ics)",
     "ind_estudo": "Estudo (aulas)",
     "ind_pratica": "Prática declarada",
-    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovação vem na prova da certificação.",
+    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovaçêo vem na prova da certificaçêo.",
     "estudo": {
       "titulo": "Seu estudo",
       "continuar": "Continuar de onde parei",
@@ -164,7 +164,7 @@
       "notas": "Minhas anotações",
       "dados": "Copiar meus dados",
       "sem_testes": "Nenhum teste feito ainda. O teste fica no fim de cada aula.",
-      "nao_fez": "teste ainda não feito",
+      "nao_fez": "teste ainda nêo feito",
       "ultimo": "Último",
       "melhor": "Melhor",
       "tentativas": "tentativas",
@@ -173,21 +173,21 @@
       "rever": "Para rever",
       "resposta": "Resposta certa:",
       "ir_teste": "Refazer o teste",
-      "sem_notas": "Nenhuma anotação ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
+      "sem_notas": "Nenhuma anotaçêo ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
       "so_marcado": "(só marcado)",
       "marcar": "Marcar",
       "anotar": "Anotar",
       "salvar": "Salvar",
       "apagar": "Apagar marca",
       "fechar": "Fechar",
-      "nota_ph": "Escreva sua anotação sobre este trecho…",
+      "nota_ph": "Escreva sua anotaçêo sobre este trecho…",
       "um_bloco": "Marque dentro de um parágrafo só.",
-      "nao_marca": "Este trecho não pode ser marcado.",
-      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e não apaga nada.",
+      "nao_marca": "Este trecho nêo pode ser marcado.",
+      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e nêo apaga nada.",
       "exportar": "Baixar cópia",
       "importar": "Carregar cópia",
       "import_ok": "Cópia carregada ({n} itens). Atualizando a página…",
-      "import_erro": "Arquivo não reconhecido. Nada foi alterado.",
+      "import_erro": "Arquivo nêo reconhecido. Nada foi alterado.",
       "import_outro": "Esta cópia é de outro curso. Nada foi alterado.",
       "export_ok": "Cópia baixada."
     },
@@ -199,7 +199,7 @@
     "conv_ruim": "Escolha fraca",
     "conv_fim": "Fim da conversa",
     "conv_placar": "Você fez {p} de {m} pontos possíveis.",
-    "conv_licao": "Lição:",
+    "conv_licao": "Liçêo:",
     "conv_recomecar": "Recomeçar a conversa",
     "conv_feita": "Seu melhor placar: {p} de {m} pontos."
   },

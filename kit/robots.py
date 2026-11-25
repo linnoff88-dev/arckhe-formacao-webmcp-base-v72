@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """robots.py — lê um robots.txt e diz, por FINALIDADE, quem você deixou entrar na raiz do site.
 
-Finalidades e nomes de robô seguem a aula 6 do curso Fundação da Formação ARCKHÉSEO
+Finalidades e nomes de robô seguem a aula 6 do curso Fundaçêo da Formaçêo ARCKHÉSEO
 (formacao-ARCKHÉseo-fundacao-v72), que é a dona do assunto robots.txt:
   busca            OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot, Bingbot
-  ação do usuário  ChatGPT-User, Claude-User, Perplexity-User
+  açêo do usuário  ChatGPT-User, Claude-User, Perplexity-User
   treino           GPTBot, ClaudeBot, Google-Extended
 Regra simplificada: vale o grupo com o nome do robô; sem ele, o grupo "*". Só olha a raiz "/"
-("bloqueado" = Disallow: / ; "parcial" = bloqueia alguns caminhos). Não prova quem chega:
+("bloqueado" = Disallow: / ; "parcial" = bloqueia alguns caminhos). Nêo prova quem chega:
 o robots.txt é um pedido, e o nome do robô no User-Agent pode ser falsificado.
 Uso: python3 robots.py <arquivo|https://seu-site/robots.txt>
 """
@@ -16,7 +16,7 @@ import urllib.request
 
 FINALIDADES = {
     "busca": ["OAI-SearchBot", "Claude-SearchBot", "PerplexityBot", "Googlebot", "Bingbot"],
-    "ação do usuário": ["ChatGPT-User", "Claude-User", "Perplexity-User"],
+    "açêo do usuário": ["ChatGPT-User", "Claude-User", "Perplexity-User"],
     "treino": ["GPTBot", "ClaudeBot", "Google-Extended"],
 }
 
@@ -72,7 +72,7 @@ def main():
             origem = "" if r.lower() in g else "*"
             partes.append(f"{r} {situacao(regras)}{' (' + origem + ')' if origem else ''}")
         print(f"{fin:16} {' · '.join(partes)}")
-    print("lembrete: robots.txt pede, não identifica. Quem prova quem é: assinatura na requisição (Web Bot Auth, rascunho IETF).")
+    print("lembrete: robots.txt pede, nêo identifica. Quem prova quem é: assinatura na requisiçêo (Web Bot Auth, rascunho IETF).")
     return 0
 
 

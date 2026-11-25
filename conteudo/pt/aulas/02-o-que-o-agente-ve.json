@@ -5,7 +5,7 @@
   "titulo": "O que o agente enxerga: árvore de acessibilidade × captura de tela",
   "titulo_curto": "O que o agente enxerga",
   "minutos": 15,
-  "lead": "Você vê cores, um botão amarelo e um campo de data. Um agente de navegador como o Playwright MCP recebe outra coisa: uma lista de papéis e nomes, a árvore de acessibilidade. Nesta aula você imprime essa árvore da página de exemplo, compara com a captura de tela e aprende a ler o que falta.",
+  "lead": "Você vê cores, um botêo amarelo e um campo de data. Um agente de navegador como o Playwright MCP recebe outra coisa: uma lista de papéis e nomes, a árvore de acessibilidade. Nesta aula você imprime essa árvore da página de exemplo, compara com a captura de tela e aprende a ler o que falta.",
   "objetivo": "ler a árvore de acessibilidade que o agente recebe e comparar com a captura de tela da mesma página.",
   "competencias": [
     "ler-a-arvore-de-acessibilidade",
@@ -23,7 +23,7 @@
     },
     {
       "icone": "x",
-      "t": "Os buracos: controle sem nome, div que finge ser botão"
+      "t": "Os buracos: controle sem nome, div que finge ser botêo"
     },
     {
       "icone": "grafico",
@@ -54,17 +54,17 @@
           "icone": "cerebro",
           "titulo": "Modelo",
           "sub": "escolhe",
-          "detalhe": "O modelo lê a árvore e decide: \"preencher o campo Seu nome, escolher Serviço, clicar Agendar\". Se o controle não tem nome, ele não tem como escolher com segurança."
+          "detalhe": "O modelo lê a árvore e decide: \"preencher o campo Seu nome, escolher Serviço, clicar Agendar\". Se o controle nêo tem nome, ele nêo tem como escolher com segurança."
         },
         {
           "icone": "seta",
-          "titulo": "Ação",
+          "titulo": "Açêo",
           "sub": "pela referência",
-          "detalhe": "A ferramenta executa a ação no controle escolhido, pela referência da árvore (no agent-browser, por exemplo, refs como @e2). Depois lê a árvore de novo para ver o resultado."
+          "detalhe": "A ferramenta executa a açêo no controle escolhido, pela referência da árvore (no agent-browser, por exemplo, refs como @e2). Depois lê a árvore de novo para ver o resultado."
         }
       ],
-      "volta": "Depois da ação, uma árvore nova",
-      "legenda": "O que não está na árvore com papel e nome, o agente só acha adivinhando pela tela."
+      "volta": "Depois da açêo, uma árvore nova",
+      "legenda": "O que nêo está na árvore com papel e nome, o agente só acha adivinhando pela tela."
     },
     {
       "tipo": "passos",
@@ -75,27 +75,27 @@
           "titulo": "Qual o papel?",
           "sub": "o que é",
           "texto": [
-            "textbox é campo de texto, combobox é lista de opções, button é botão, link é link, heading é título, img é imagem. O papel vem do elemento HTML: <code>input</code>, <code>select</code>, <code>button</code>, <code>a</code>, <code>h1</code>, <code>img</code>.",
-            "Um <code>div</code> com <code>onclick</code> não vira button: aparece como texto solto."
+            "textbox é campo de texto, combobox é lista de opções, button é botêo, link é link, heading é título, img é imagem. O papel vem do elemento HTML: <code>input</code>, <code>select</code>, <code>button</code>, <code>a</code>, <code>h1</code>, <code>img</code>.",
+            "Um <code>div</code> com <code>onclick</code> nêo vira button: aparece como texto solto."
           ]
         },
         {
           "titulo": "Tem nome?",
           "sub": "entre aspas",
           "texto": [
-            "O nome aparece entre aspas: <code>textbox \"Seu nome\"</code>. Ele vem do <code>label</code>, de <code>aria-label</code>, do <code>alt</code> da imagem ou do texto do botão.",
-            "Sem aspas, o controle não tem nome: <code>- textbox</code>, <code>- img</code>."
+            "O nome aparece entre aspas: <code>textbox \"Seu nome\"</code>. Ele vem do <code>label</code>, de <code>aria-label</code>, do <code>alt</code> da imagem ou do texto do botêo.",
+            "Sem aspas, o controle nêo tem nome: <code>- textbox</code>, <code>- img</code>."
           ],
           "exemplo": {
             "rot": "Pegadinha da página de exemplo",
-            "texto": "Em antes.html o primeiro campo aparece como textbox \"Seu nome\", mas o nome vem só do placeholder. Ele some quando a pessoa digita e não é um label: o teste da aula 1 travou justamente nesse campo."
+            "texto": "Em antes.html o primeiro campo aparece como textbox \"Seu nome\", mas o nome vem só do placeholder. Ele some quando a pessoa digita e nêo é um label: o teste da aula 1 travou justamente nesse campo."
           }
         },
         {
-          "titulo": "Está numa região?",
+          "titulo": "Está numa regiêo?",
           "sub": "main, h1",
           "texto": [
-            "<code>main</code> e um <code>heading</code> de nível 1 dizem onde está o conteúdo principal. Sem eles, a árvore é uma lista plana e o agente não sabe o que é menu e o que é a tarefa."
+            "<code>main</code> e um <code>heading</code> de nível 1 dizem onde está o conteúdo principal. Sem eles, a árvore é uma lista plana e o agente nêo sabe o que é menu e o que é a tarefa."
           ]
         }
       ]
@@ -116,10 +116,10 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>## árvore de acessibilidade · 9 linhas · 182 bytes\n- text: Agendar revisão\n- img\n- textbox \"Seu nome\"\n- combobox:\n  - option \"Escolha\" [selected]\n  - option \"Revisão básica\"\n  - option \"Revisão completa\"\n- textbox\n- text: Agendar\n## tela · /tmp/tela-antes.png · 14536 bytes (o modelo teria de ler pixels)\n## conferência · http://127.0.0.1:PORTA/antes.html\n  - img sem nome acessível\n  - combobox sem nome acessível\n  - textbox sem nome acessível\n  - &lt;html&gt; sem lang\n  - sem &lt;main&gt;\n  - sem &lt;h1&gt;\n  - &lt;div&gt; clicável que não é botão (\"Agendar\")\n  - campo #nome sem &lt;label&gt; (só placeholder)\n  - campo #servico sem &lt;label&gt;\n  - campo #data sem &lt;label&gt;\nproblemas: 10\nsaída: 1</pre><p>Nove linhas de árvore contra 14.536 bytes de PNG. Na árvore, a lista de serviços (combobox), o campo de data e a imagem estão sem nome, e o botão \"Agendar\" virou <code>text</code>. A conferência lista 10 problemas e o script sai com 1.</p>"
+            "html": "<pre>## árvore de acessibilidade · 9 linhas · 182 bytes\n- text: Agendar revisêo\n- img\n- textbox \"Seu nome\"\n- combobox:\n  - option \"Escolha\" [selected]\n  - option \"Revisêo básica\"\n  - option \"Revisêo completa\"\n- textbox\n- text: Agendar\n## tela · /tmp/tela-antes.png · 14536 bytes (o modelo teria de ler pixels)\n## conferência · http://127.0.0.1:PORTA/antes.html\n  - img sem nome acessível\n  - combobox sem nome acessível\n  - textbox sem nome acessível\n  - &lt;html&gt; sem lang\n  - sem &lt;main&gt;\n  - sem &lt;h1&gt;\n  - &lt;div&gt; clicável que nêo é botêo (\"Agendar\")\n  - campo #nome sem &lt;label&gt; (só placeholder)\n  - campo #servico sem &lt;label&gt;\n  - campo #data sem &lt;label&gt;\nproblemas: 10\nsaída: 1</pre><p>Nove linhas de árvore contra 14.536 bytes de PNG. Na árvore, a lista de serviços (combobox), o campo de data e a imagem estêo sem nome, e o botêo \"Agendar\" virou <code>text</code>. A conferência lista 10 problemas e o script sai com 1.</p>"
           },
           {
-            "rot": "Erro comum: \"tem nome, então está certo\"",
+            "rot": "Erro comum: \"tem nome, entêo está certo\"",
             "html": "<p>A linha <code>textbox \"Seu nome\"</code> parece boa. Mas a conferência acusa <code>campo #nome sem &lt;label&gt; (só placeholder)</code>: o Chromium usa o placeholder como último recurso para o nome. O teste da aula 1 procura pelo rótulo (<code>getByLabel</code>) e travou aí. Rótulo de verdade é <code>&lt;label for&gt;</code>.</p>"
           }
         ]
@@ -134,7 +134,7 @@
           "id": "e1",
           "titulo": "E1 · Árvore × tela",
           "min": "10 min",
-          "texto": "Rode o bloco \"árvore e tela\". Abra /tmp/tela-antes.png e, para cada linha da árvore, ache o controle na imagem. Marque os que não têm nome.",
+          "texto": "Rode o bloco \"árvore e tela\". Abra /tmp/tela-antes.png e, para cada linha da árvore, ache o controle na imagem. Marque os que nêo têm nome.",
           "pronto": "<code>node arvore.mjs antes --tela /tmp/tela-antes.png</code> → <code>problemas: 10</code> e <code>saída: 1</code>, e o arquivo <code>/tmp/tela-antes.png</code> existe."
         },
         {
@@ -159,32 +159,32 @@
             "A lista de ferramentas WebMCP registradas pela página"
           ],
           "certa": 2,
-          "explica": "O Playwright MCP usa snapshots de acessibilidade em vez de capturas de tela. Ferramentas WebMCP são outro jeito (chamar), e só existem com origin trial.",
+          "explica": "O Playwright MCP usa snapshots de acessibilidade em vez de capturas de tela. Ferramentas WebMCP sêo outro jeito (chamar), e só existem com origin trial.",
           "ref": "diagrama",
           "cert": true
         },
         {
           "p": "Na árvore aparece \"- textbox\" sem nada depois. O que isso diz?",
           "opcoes": [
-            "Que o campo de texto não tem nome acessível",
+            "Que o campo de texto nêo tem nome acessível",
             "Que o campo está desabilitado",
             "Que o campo é obrigatório",
             "Que o campo foi preenchido pelo agente e está travado"
           ],
           "certa": 0,
-          "explica": "O nome aparece entre aspas. Sem aspas, o agente não tem como saber se aquele campo é a data, o telefone ou o e-mail.",
+          "explica": "O nome aparece entre aspas. Sem aspas, o agente nêo tem como saber se aquele campo é a data, o telefone ou o e-mail.",
           "ref": "passos"
         },
         {
-          "p": "Um botão feito com div e onclick aparece como na árvore?",
+          "p": "Um botêo feito com div e onclick aparece como na árvore?",
           "opcoes": [
-            "Como button, igual a um botão feito com button",
+            "Como button, igual a um botêo feito com button",
             "Como link, porque o div é clicável",
-            "Como combobox com a opção Agendar",
-            "Como texto solto, sem papel de botão"
+            "Como combobox com a opçêo Agendar",
+            "Como texto solto, sem papel de botêo"
           ],
           "certa": 3,
-          "explica": "O papel vem do elemento HTML. div com onclick é texto para a árvore; para o agente, não há botão para clicar pelo nome.",
+          "explica": "O papel vem do elemento HTML. div com onclick é texto para a árvore; para o agente, nêo há botêo para clicar pelo nome.",
           "ref": "codigo",
           "cert": true
         },
@@ -192,12 +192,12 @@
           "p": "O campo tem só placeholder \"Seu nome\" e a árvore mostra textbox \"Seu nome\". Está resolvido?",
           "opcoes": [
             "Sim: se aparece com nome na árvore, o agente sempre acha",
-            "Não: o nome vem do placeholder; falta o label",
+            "Nêo: o nome vem do placeholder; falta o label",
             "Sim, desde que a página tenha main e h1",
-            "Não: placeholder impede o envio do formulário pelo agente"
+            "Nêo: placeholder impede o envio do formulário pelo agente"
           ],
           "certa": 1,
-          "explica": "O Chromium usa o placeholder como último recurso. Ele some quando se digita, e quem procura pelo rótulo (como o teste da aula 1) não acha.",
+          "explica": "O Chromium usa o placeholder como último recurso. Ele some quando se digita, e quem procura pelo rótulo (como o teste da aula 1) nêo acha.",
           "ref": "codigo"
         }
       ]
@@ -207,7 +207,7 @@
       "titulo": "Em três frases",
       "itens": [
         {
-          "t": "Árvore, não pixel",
+          "t": "Árvore, nêo pixel",
           "texto": "O agente de navegador lê papéis e nomes, uma lista curta de texto."
         },
         {
@@ -216,7 +216,7 @@
         },
         {
           "t": "Placeholder engana",
-          "texto": "Dá um nome na árvore, mas não é rótulo; use label."
+          "texto": "Dá um nome na árvore, mas nêo é rótulo; use label."
         }
       ]
     },
@@ -230,7 +230,7 @@
           "icone": "arquivo"
         },
         {
-          "t": "Playwright: snapshots de ARIA (documentação)",
+          "t": "Playwright: snapshots de ARIA (documentaçêo)",
           "href": "https://playwright.dev/docs/aria-snapshots",
           "icone": "lupa"
         },
@@ -240,7 +240,7 @@
           "icone": "lupa"
         },
         {
-          "t": "Curso 3 da formação: agentes de navegador contra o seu site",
+          "t": "Curso 3 da formaçêo: agentes de navegador contra o seu site",
           "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         }

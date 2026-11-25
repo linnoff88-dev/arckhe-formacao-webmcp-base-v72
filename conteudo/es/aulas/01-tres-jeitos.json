@@ -137,7 +137,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>## depois.html\n1 · ler     2.2 KB de HTML · h1: Agendar revisão · &lt;form&gt;: 1 · &lt;label&gt;: 3\n2 · operar  achou 3 campos e o botão pelo nome · tela diz: Pedido recebido (simulação): revisão completa em 2026-10-25, Ana\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 0\n## antes.html\n1 · ler     1.7 KB de HTML · h1: (sem &lt;h1&gt;) · &lt;form&gt;: 0 · &lt;label&gt;: 0\n2 · operar  travou: não achou o campo \"Seu nome\" pelo nome em 2 s (o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 1</pre><p>Misma pantalla, resultado opuesto. En depois.html el agente agenda; en antes.html ni siquiera encuentra el primer campo y el script termina con 1. El modo 3 está ausente en las dos: la página de ejemplo no tiene token de origin trial.</p>"
+            "html": "<pre>## depois.html\n1 · ler     2.2 KB de HTML · h1: Agendar revisêo · &lt;form&gt;: 1 · &lt;label&gt;: 3\n2 · operar  achou 3 campos e o botêo pelo nome · tela diz: Pedido recebido (simulaçêo): revisêo completa em 2026-10-25, Ana\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 0\n## antes.html\n1 · ler     1.7 KB de HTML · h1: (sem &lt;h1&gt;) · &lt;form&gt;: 0 · &lt;label&gt;: 0\n2 · operar  travou: nêo achou o campo \"Seu nome\" pelo nome em 2 s (o agente teria de adivinhar pela tela)\n3 · chamar  document.modelContext: ausente neste Chromium 153.0.8010.12 → sem ferramentas declaradas, o agente fica no jeito 2\nsaída: 1</pre><p>Misma pantalla, resultado opuesto. En depois.html el agente agenda; en antes.html ni siquiera encuentra el primer campo y el script termina con 1. El modo 3 está ausente en las dos: la página de ejemplo no tiene token de origin trial.</p>"
           },
           {
             "rot": "Error común: \"en la pantalla está todo bien\"",
@@ -195,7 +195,7 @@
           "titulo": "E2 · Misma pantalla, resultado opuesto",
           "min": "5 min",
           "texto": "Ejecuta el bloque \"después y antes\" y compara la línea 2 de las dos páginas.",
-          "pronto": "<code>node tres-jeitos.mjs depois</code> → <code>2 · operar  achou 3 campos e o botão pelo nome</code> y <code>saída: 0</code>; <code>node tres-jeitos.mjs antes</code> → <code>travou</code> y <code>saída: 1</code>."
+          "pronto": "<code>node tres-jeitos.mjs depois</code> → <code>2 · operar  achou 3 campos e o botêo pelo nome</code> y <code>saída: 0</code>; <code>node tres-jeitos.mjs antes</code> → <code>travou</code> y <code>saída: 1</code>."
         },
         {
           "id": "e3",

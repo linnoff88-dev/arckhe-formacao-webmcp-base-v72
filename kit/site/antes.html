@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oficina Pedal Livre</title>
-<!-- Página de exemplo do curso (fictícia). Versão "antes": parece certa na tela, mas o agente não acha os nomes. -->
+<!-- Página de exemplo do curso (fictícia). Versêo "antes": parece certa na tela, mas o agente nêo acha os nomes. -->
 <style>
   body { font-family: system-ui, sans-serif; background: #0c0c10; color: #eee; margin: 0; padding: 24px; }
   .caixa { max-width: 420px; background: #18181f; padding: 20px; border-radius: 10px; }
@@ -16,13 +16,13 @@
 </head>
 <body>
 <div class="caixa">
-  <div class="titulo">Agendar revisão</div>
+  <div class="titulo">Agendar revisêo</div>
   <img src="bike.svg" width="60" height="40">
   <input id="nome" placeholder="Seu nome">
   <select id="servico">
     <option value="">Escolha</option>
-    <option value="basica">Revisão básica</option>
-    <option value="completa">Revisão completa</option>
+    <option value="basica">Revisêo básica</option>
+    <option value="completa">Revisêo completa</option>
   </select>
   <input id="data" type="date">
   <div class="botao" onclick="agendar()">Agendar</div>
@@ -35,7 +35,7 @@
     const data = document.getElementById("data").value;
     const r = document.getElementById("resultado");
     r.textContent = nome && servico && data
-      ? `Pedido recebido (simulação): revisão ${servico} em ${data}, ${nome}`
+      ? `Pedido recebido (simulaçêo): revisêo ${servico} em ${data}, ${nome}`
       : "Preencha nome, serviço e data.";
   }
 </script>
