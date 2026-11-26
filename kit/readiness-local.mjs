@@ -1,5 +1,5 @@
-// readiness-local.mjs — roda o scanner WebMCP Readiness (código aberto, inematds/webmcp-readiness)
-// na SUA máquina, sem passar pelo site webmcp.inema.pro, e imprime o diagnóstico resumido.
+// readiness-local.mjs — roda o scanner WebMCP Readiness (código aberto, linnoff88-dev/webmcp-readiness)
+// na SUA máquina, sem passar pelo site webmcp.ARCKHÉ.pro, e imprime o diagnóstico resumido.
 // O scanner é passivo: abre a página num Chromium headless e lê; não executa ferramenta nenhuma.
 // Uso: node readiness-local.mjs <pasta-do-webmcp-readiness> [antes|depois|https://seu-site] [--json arquivo]
 import path from "node:path";
